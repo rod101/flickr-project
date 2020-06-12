@@ -3,7 +3,7 @@ import axios from "axios";
 // import {ListGroup} from 'react-bootstrap';
 import ListGroup from "react-bootstrap/ListGroup";
 import "./Locations.css";
-import { Container } from "react-bootstrap";
+import { Container, Button } from "react-bootstrap";
 
 class Locations extends Component {
   state = {
@@ -18,6 +18,8 @@ class Locations extends Component {
       console.log(persons);
     });
   }
+
+
 
   render() {
     return (
