@@ -1,4 +1,62 @@
+## Create React App 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+Create React apps with no build configuration.
+
+### Quick Overview
+```
+npx create-react-app flickr-project
+cd my-app
+npm start
+```
+
+## Include React Bootstrap in your project
+```
+npm install react-bootstrap bootstrap
+```
+
+### Importing Components
+```
+import Button from 'react-bootstrap/Button';
+
+// or less ideally
+import { Button } from 'react-bootstrap';
+```
+### Browser globals
+```
+<script src="https://unpkg.com/react/umd/react.production.min.js" crossorigin></script>
+
+<script
+  src="https://unpkg.com/react-dom/umd/react-dom.production.min.js"
+  crossorigin></script>
+
+<script
+  src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js"
+  crossorigin></script>
+
+<script>var Alert = ReactBootstrap.Alert;</script>
+```
+For more information on how to use React Bootstrap [click here](https://react-bootstrap.github.io)
+
+## Installing react-router-dom
+DOM bindings for React Router.
+
+Using npm:
+```
+ $ npm install --save react-router-dom
+```
+
+## Adding axios to the project
+Promise based HTTP client for the browser and node.js
+
+Using npm:
+```
+$ npm install axios
+```
+
+
+
+
 
 ## Available Scripts
 
