@@ -15,12 +15,8 @@ class Locations extends Component {
     axios.get(`https://jsonplaceholder.typicode.com/users`).then((res) => {
       const persons = res.data;
       this.setState({ persons });
-      console.log(persons);
     });
   }
-
-
-
   render() {
     return (
       <div>

@@ -10,14 +10,13 @@ class PhotosDetails extends Component {
       owner: null,
       location: null,
     };
-    console.log("help", this.props.match.params);
   }
 
   componentDidMount() {
     let imageId = this.props.match.params.id;
     this.loadImageDetails(imageId);
   }
-  // Get the image details
+  // Get the image details from api call
   loadImageDetails(imageId) {
     const GET_PIC_URL =
       "https://api.flickr.com/services/rest/?method=flickr.photos.getInfo&api_key=" +
@@ -42,7 +41,6 @@ class PhotosDetails extends Component {
             "_" +
             pic.secret +
             ".jpg";
-          console.log(srcPath);
           this.setState({ path: srcPath });
           this.setState({ dateUploaded: pic.dates.taken });
           this.setState({ owner: pic.owner.realname });
