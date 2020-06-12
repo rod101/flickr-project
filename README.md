@@ -1,3 +1,12 @@
+## About this Project
+Building a client-side web app using React. This web app display photos from Flickr
+
+search for places around a location and display the photos found for these locations. And click on an image to view more details about the project
+
+1. A page listing locations
+2. A page listing images for a location
+3. A page with details for a specific image
+
 ## Create React App 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -45,6 +54,14 @@ Using npm:
 ```
  $ npm install --save react-router-dom
 ```
+## Flickr API
+Using Flickr API you can retrieve a plethora of photographs and in turn, may create awesome applications. 
+
+### Obtaining an API key
+Get your API Key [click here](https://www.flickr.com/services/apps/create/apply)
+
+update the .env file with your key and you ready to go
+
 
 ## Adding axios to the project
 Promise based HTTP client for the browser and node.js
@@ -53,10 +70,6 @@ Using npm:
 ```
 $ npm install axios
 ```
-
-
-
-
 
 ## Available Scripts
 
